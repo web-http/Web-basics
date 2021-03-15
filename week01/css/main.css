@@ -1,5 +1,38 @@
-p {
-    font-size: 60px;
-    font-weight: 800;
-    text-align: center;
+body {
+    padding: 4rem;
+    white-space: nowrap;
+    font-family: 'East Sea Dokdo', cursive;
+    background-image: url(https://cdn.pixabay.com/photo/2019/01/27/20/57/daffodil-3959015_1280.jpg);
+    background-size:cover;
 }
+
+.poem {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20rem;
+    justify-content: center;
+    align-items: center;
+}    
+
+.head {
+    width: 50%;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+#title {
+    text-align: left;
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.text {
+    width: 50%;
+    font-size: 3rem;
+    line-height: 2rem;
+}
+
+.caluse+.caluse {
+    margin-bottom: 2.25rem;
+}
+
