@@ -1,0 +1,66 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.header {
+    display: flex;
+    margin-top:31px;
+    margin-bottom: 31px;
+    margin-left: px;
+}
+
+.nav {
+    display:flex;
+    list-style: none;
+}
+
+#search {
+    margin-left:4cm;
+}
+
+#login {
+    margin-left:0.5cm;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin-left: 3cm;
+    text-decoration:none;
+}
+
+p0 {
+    border-style:solid;
+    border-color: #8b8b8b;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 90%;
+}
+
+.banner {
+    background-color: #243668;
+    height: 450px;
+    width: auto;
+}
+
+#textbox {
+    margin-left:3cm;
+    padding: 4cm;
+}
+
+p1 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 130px;
+}
+
+p2 {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 400;
+}
