@@ -12,7 +12,7 @@ body {
     margin-left: 5cm;
 }
 
-ul {
+#nav, .stapick {
     display:flex;
     list-style: none;
 }
@@ -27,11 +27,14 @@ ul {
 
 a {
     font-size: 16px;
-    font-weight: 600;
     color: #000000;
+    text-decoration:none;
     margin-left: 1.5cm;
     margin-right: 1.5cm;
-    text-decoration:none;
+}
+
+#nav > li > a {
+    font-weight: 600;
 }
 
 p0 {
@@ -66,19 +69,21 @@ p0 {
     margin-top: 130px;
 }
 
-h2 {
+#textbox > h2 {
     color: #ffffff;
     font-size: 20px;
     line-height: 130%;
     font-weight: 400;
 }
 
-.ban2 {
+#ban2 {
     background-image: url(../image/BgStaffPickInner.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
     background-position: center;
+    padding: 1cm 8cm;
+    
 }
 
 #hset {
@@ -89,23 +94,151 @@ h2 {
     font-size: 30px;
 }
 
-.ban2 h1 {
+#hset > a {
+    display: block;
+    text-align: right;
+    color: white;
+    
+}
+
+#ban2 h1 {
     color: #ffffff;
     font-size: 32px;
     font-weight: 700;
     text-align: center;
 }
 
-.ban2 h2 {
+#ban2 h2 {
     text-align:center;
     font-size: 15px;
 }
 
-  
-.stapick > img {
-    border-radius: 20px;
+#ban3, #ban4 {
+    padding: 1cm 8cm;
+    height:400px;
+}
+
+#ban3 > h1, #ban4 h1 {
+    margin-top: 0.5cm;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.stapick > li {
+    margin:auto;
+    list-style: none;
+    display: flex;
+}
+
+
+.cardbox > img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     height: 150px;
     width: 250px;
-    margin-right: 0.2cm;
     margin-top: 1cm;
+    margin-right: 8px;
+}
+
+.titlebox {
+    height: 80px;
+    width: 230px;
+    padding: 10px 10px;
+    background-color: rgba(228, 228, 228, 0.746);
+    margin-right:8px;
+}
+
+.titlebox > h6 {
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.interestbox {
+    height: 20px;
+    width: 230px;
+    padding: 10px 10px;
+    background-color: rgba(228, 228, 228, 0.746);
+    margin-right:8px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.profile > img {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#colorbox {
+    background-color: #F7CAC1;
+    border-radius: 20px;
+    height: 300px;
+    width: 250px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#colorbox > h1, h2 {
+    color: white;
+    line-height: 160%;
+}
+
+#ban4 {
+    background-color: #D8F0F5;
+    width: auto;
+    height: 400px;
+}
+
+#ban5 {
+    padding: 50px;
+    height: 400px;
+    width: 100%;
+}
+
+
+#left {
+    float: left;
+}
+
+#right {
+    display: block;
+    float: right;
+}
+
+#left > img {
+    border-radius: 20px;
+    height: 365px;
+    width: 522px;
+}
+
+#right > ul > li > img {
+    border-radius: 20px;
+    height: 110px;
+    width: 194px;
+}
+
+#explain {
+    display: inline;
+}
+
+.type {
+    display: flex;
+}
+
+.type > image {
+    border-radius: 20px;
+
+}
+
+#ban6 {
+    margin: 50px;
+    height: 400px;
+    width: 100%;
+}
+
+#various > li > .stapick > img {
+    border-radius: 20px;
+    margin-left: 20px;
 }
