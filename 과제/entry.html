@@ -14,331 +14,699 @@
     <!-- 페이지 이름 설정 -->
     <title>엔트리 - 우리는 무엇이든 될 수 있어요</title>
     <!-- css 설정 초기화 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <!-- css로 연결 -->
     <link rel="stylesheet" href="./css/entry.css">
+    <!-- js로 연결 -->
+    <script src = "./js/entry.js"></script>
     <!-- 파비콘 설정하기 -->
     <link rel="icon" href="https://playentry.org/favicon-16x16.png">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />    
 </head>
 
 <body>
     <!-- 헤더 -->
     <div class="header">
         <!-- 로고 -->
-        <div id = "logo"></div>
-            <a href="https://playentry.org/"><img src="./image/entry logo.svg" alt="로고 이미지">
-        <ul id = "nav">
-            <li><a href="https://playentry.org/learn">생각하기</a></li>
-            <li><a href="https://playentry.org/ws/new">만들기</a></li>
-            <li><a href="https://playentry.org/project/list/popular">공유하기</a></li>
-            <li><a href="https://playentry.org/community/qna/list/1">커뮤니티</a></li>      
-        </ul>
-        <!-- 검색 버튼 -->
-        <div id = "search">
-            <img src="./image/Search.svg" alt="검색 도구">
-        </div>
-        <!-- 로그인 버튼 -->
-        <div id = "login">
-            <p0>로그인</p0>
-        </div>
-    </div>    
-
-    <!-- 첫번째 배너 -->
-    <div class="banner">
-        <span id="textbox">    
-            <h1>우리는 무엇이든 될 수 있어요</h1>
-            <br><br>
-            <h2>엔트리는 소프트웨어를 통해 미래를 꿈꾸고 함께 성장하는</h2><br>
-            <h2>창작 플랫폼입니다.</h2>
-        </span>    
+        <div class="top">
+            <div id = "logo">
+                <a href="https://playentry.org/"><img src="./image/entry logo.svg" alt="로고 이미지"></a>
+            </div>        
+            <ul id = "nav">
+                <li><a href="https://playentry.org/learn">생각하기</a></li>
+                <li><a href="https://playentry.org/ws/new">만들기</a></li>
+                <li><a href="https://playentry.org/project/list/popular">공유하기</a></li>
+                <li><a href="https://playentry.org/community/qna/list/1">커뮤니티</a></li>      
+            </ul>
+            <!-- 검색, 로그인 버튼 -->
+            <div id = "search-login">
+                <img src="./image/Search.svg" alt="검색 도구">
+                <p0>로그인</p0>
+            </div>
+        </div>   
     </div>
-    
-    <!-- 두번째 배너 -->
+
+    <div id="navigation">
+        <div id="category">
+            <div class="entrymenu" id="entry">
+                <ul>
+                    <li>
+                        <a href="">엔트리 소개</a>
+                    </li>
+                    <li>
+                        <a href="">문의하기</a>
+                    </li>
+                    <li>
+                        <a href="">제안 및 건의</a>
+                    </li>
+                    <li>
+                        <a href="">다운로드</a>
+                    </li>
+                    <li>
+                        <a href="">교육자료</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="entrymenu" id="think">
+                <ul>
+                    <li>
+                        <a href="">엔트리 학습하기</a>
+                    </li>
+                    <li>
+                        <a href="">교과서 실습하기</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="entrymenu" id="make">
+                <ul>
+                    <li>
+                        <a href="">작품 만들기</a>
+                    </li>
+                    <li>
+                        <a href="">교과형 만들기</a>
+                    </li>
+                    <li>
+                        <a href="">스터디 만들기</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="entrymenu" id="share">
+                <ul>
+                    <li>
+                        <a href="">작품 공유하기</a>
+                    </li>
+                    <li>
+                        <a href="">스터디 공유하기</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="entrymenu" id="commu">
+                <ul>
+                    <li>
+                        <a href="">묻고 답하기</a>
+                    </li>
+                    <li>
+                        <a href="">노하우&팁</a>
+                    </li>
+                    <li>
+                        <a href="">엔트리 이야기</a>
+                    </li>
+                    <li>
+                        <a href="">공지사항</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="a">
+                <span class="textbox">    
+                    <h1>우리는 무엇이든 될 수 있어요</h1>
+                    <br><br>
+                    <h2>엔트리는 소프트웨어를 통해 미래를 꿈꾸고 함께 성장하는</h2><br>
+                    <h2>창작 플랫폼입니다.</h2>
+                    <a href="https://playentry.org/about">자세히 보기</a>
+                </span> 
+            </div>
+            <div class="swiper-slide" id="b">
+                <span class="textbox">    
+                    <h1>더 다양해진 엔트리의 인공지능</h1>
+                    <br><br>
+                    <h2>이미지 음성 텍스트뿐만 아니라 테이블의 숫자로 분류</h2><br>
+                    <h2>예측 군집 모델을 만들 수 있어요</h2>
+                    <a href="https://playentry.org/community/notice/5ff32766edc3c90085bb5a4f">자세히 보기</a>
+                </span>  
+            </div>
+            <div class="swiper-slide" id="c">
+                <span class="textbox">    
+                    <h1>이메일 인증 하셨나요?</h1>
+                    <br><br>
+                    <h2>이메일 인증으로 더욱 안전하고 편리한 엔트리 라이프!</h2><br>
+                    <a href="https://playentry.org/community/notice/5fdb079d20ddbd1cb77cb656">자세히 보기</a>
+                </span> 
+            </div>
+            <div class="swiper-slide" id="d">
+                <span class="textbox">    
+                    <h1>천만 작품 돌파 감사합니다!</h1>
+                    <br><br>
+                    <h2>모든 작품은 엔트리에서 영원히 빛날 거에요!</h2><br>
+                    <a href="https://playentry.org/community/notice/6086bfbcc3dfda002f617408">자세히 보기</a>
+                </span>    
+            </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+    </div>
+       
+    <!-- 두 번째 배너 -->
     <div id = "ban2">
-        <div id="hset">    
+        <div class="content1">  
             <h2>STAFF PICK</h2>
             <br>
-            <h1>이번주의 스태프 선정 작품</h1>
-            <a href="https://playentry.org/project/list/staffpick">스태프 선정 작품 더보기 ></a>
-        </div>    
-        <ul class = stapick>
-            <li>
-                <div class = "cardbox">
-                    <img src="https://playentry.org/uploads/5p/tl/5ptlpy5tkns7enri1baoa2c943fhk7iw.gif" alt="Orbit or Beat">
-                    <div class = "titlebox">
-                        <h6>Orbit or Beat</h6>
-                        <div class = "profile">
-                            <img src="https://playentry.org/uploads/rj/un/rjun1skfkntvs9030u4va2c943b2tpd2.png" alt="nb3at">
-                        </div>
-                    </div>
-                    <div class = "interestbox">
-                        
-                    </div>
-                </div>    
-            </li>
-            <li>
-                <div class = "cardbox">
-                    <img src="https://playentry.org/uploads/thumb/604c/604c7c8a4c6b86008925a99f.png" alt="공과 선분의 충돌">
-                    <div class = "titlebox">
-                        <h6>공과 선분의 충돌</h6>
-                        <div class = "profile">
-                            <img src="https://playentry.org/uploads/kg/jo/kgjoejgjkne43lpc19i0a2c943c0j21v.gif" alt="tjstod">
-                        </div>
-                    </div>
-                    <div class = "interestbox">
-                        
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class = "cardbox">
-                    <img src="https://playentry.org/uploads/thumb/5ff7/5ff7e2fd9b470701a115bae4.png" alt="고퀄리티 웹툰-재회(수)">
-                    <div class = "titlebox">
-                        <h6>고퀄리티 웹툰-재회(수)</h6>
-                        <div class = "profile">
-                            <img src="https://playentry.org/uploads/ri/fv/rifvtsp1kkgatneb203b9d00628d3gfy.png" alt="유체리">
-                        </div>
-                    </div>
-                    <div class = "interestbox">
-                        
-                    </div>
-                </div>
-            </li>        
-            <li>
-                <div class = "cardbox">
-                    <img src="https://playentry.org/uploads/thumb/6078/6078f9692bb94800568ae99a.png" alt="꽃의 이름을 찾아드립니다!">
-                    <div class = "titlebox">
-                        <h6>꽃의 이름을 찾아드립니다!</h6>
-                        <div class = "profile">
-                            <img src="https://playentry.org/uploads/tc/2d/tc2dhy1tkkf2szno12j29d00629yf7qk.png" alt="윈디가디">
-                        </div>
-                    </div>
-                    <div class = "interestbox">
-                        
-                    </div>
-                </div>    
-            </li>            
-        </ul>
-    </div>
-
-    <div id = "ban3">
-        <h1>인기 작품</h1>
-        <ul class = stapick>
-            <li>
-                <div class = "cardbox">
-                    <img src="https://playentry.org/uploads/thumb/6040/6040803a9279da06a432d0d6.png" alt="마을 쟁탈전">
-                    <div class = "titlebox">
-                        <h6>마을 쟁탈전</h6>
-                        <div class = "profile">
-                            <img src="https://playentry.org/uploads/4f/ec/4fecf568knn9fah72kdwa2c943bq1w7r.png" alt="블루스타">
-                        </div>
-                    </div>
-                    <div class = "interestbox">
-                        
-                    </div>
-                </div>        
-            </li>
-            <li>
-                <div class = "cardbox">
-                    <img src="https://playentry.org/uploads/thumb/6036/60363b4b4ab84216188bfbf2.png" alt="저작이 훨씬 재밌어요">
-                    <div class = "titlebox">
-                        <h6>저작이 훨씬 재밌어요!</h6>
-                        <div class = "profile">
-                            <img src="https://playentry.org/uploads/xe/lm/xelm4hbjkne463251c8ka2c9438sdn4o.gif" alt="더러운아거">
-                        </div>
-                    </div>
-                    <div class = "interestbox">
-                        
-                    </div>
-                </div>   
-            </li>
-            <li>
-                <div class = "cardbox">
-                    <img src="https://playentry.org/uploads/thumb/6023/6023df07f0511758a3a33d97.png" alt="[땡큐편지][인작] 퓨전할래애">
-                    <div class = "titlebox">
-                        <h6>[땡큐편지][인작] 퓨전할래애</h6>
-                        <div class = "profile">
-                            <img src="https://playentry.org/uploads/36/tg/36tgsr4ikkf5o1v305fm9d00621wfsab.png" alt="hungry643">
-                        </div>
-                    </div>
-                    <div class = "interestbox">
-                        
-                    </div>
-                </div>    
-            </li>
-            <li>
-                <div class = "cardbox">
-                    <img src="https://playentry.org/uploads/e5/b0/e5b01gsakncrkdjn125ydd6333216ewa.gif" alt="프사 대전쟁 3">
-                    <div class = "titlebox">
-                        <h6>프사 대전쟁 3</h6>
-                        <div class = "profile">
-                            <img src="https://playentry.org/uploads/pb/ab/pbabj6vdkncs1zyn18irdd63335es7kl.png" alt="영자">
-                        </div>
-                    </div>
-                    <div class = "interestbox">
-                        
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <div id = "ban4">
-        <h1>새로운 주제에 도전해보세요!</h1>
-        <ul class = stapick>
-            <li>
-                <div id = "colorbox">
-                    <h1>[나무, 꽃 환경]</h1>
-                    <h2>봄과 관련된 작품을</h2>
-                    <h2>만들어봄</h2>
-                </div>
-            </li>
-            <li>
-                <div class = "cardbox">
-                    <img src="https://playentry.org/uploads/thumb/5e7f/5e7f223ef54ad4002c4a1e51.png" alt="[인작] 감옥탈출! _꽃 이벤트 추가~!">
-                    <div class = "titlebox">
-                        <h6>[인작] 감옥탈출!</h6>
-                        <div class = "profile">
-                            <img src="https://playentry.org/uploads/s5/ci/s5ci3m9ukkes4yu00d749d0062317ff7.png" alt="초파리">
-                        </div>
-                    </div>
-                    <div class = "interestbox">
-                        
-                    </div>
-                </div>        
-            </li>
-            <li>
-                <div class = "cardbox">
-                    <img src="https://playentry.org/uploads/thumb/5c39/5c393befaeb8b79b9f684e47.png" alt="바운스볼: 꽃들이 사라진 마을">
-                    <div class = "titlebox">
-                        <h6>바운스볼: 꽃들이 사라진 마을</h6>
-                        <div class = "profile">
-                            <img src="https://playentry.org/uploads/35/kc/35kcdb35kkeu7etz0mc09d0062823bm6.png" alt="">
-                        </div>
-                    </div>
-                    <div class = "interestbox">
-                        
-                    </div>
-                </div>   
-            </li>
-            <li>
-                <div class = "cardbox">
-                    <img src="https://playentry.org/uploads/thumb/5e35/5e353129c44e8300a14f6659.png" alt="포켓몬고 이상해씨 이상해풀">
-                    <div class = "titlebox">
-                        <h6>포켓몬고 이상해씨 이상해풀</h6>
-                        <div class = "profile">
-                            <img src="https://playentry.org/uploads/sb/x9/sbx99l68kkezoj9x0vv09d0062cwolu7.png" alt="도치">
-                        </div>
-                    </div>
-                    <div class = "interestbox">
-                        
-                    </div>
-                </div>    
-            </li>
-        </ul>
-    </div>
-
-
-    <div id = ban5>
-        <div id = "left">
-            <img src="https://playentry.org/uploads/kh/uv/khuvih35klal6j83003kc83c5c9wbgpn.png" alt="엔트리 학습하기">
-        </div>
-        <div id = "right">
-            <ul class = stapick>   
+            <h1>이번주의 스태프 선정 작품</h1> 
+            <ul class = "stapick">
                 <li>
-                    <img src="https://playentry.org/uploads/sh/16/sh1639xuklalkk5u003kc83c5cghq7ld.png" alt="작은 그림1">
-                    <div class = "explan">
-                        <h5>이상한 숲 속의 엔트리봇</h5>
-                        <h6>거대한 풀 숲에 갇힌 엔트리봇을 도와주세요!</h6>
+                    <div class = "cardbox">
+                        <img src="https://playentry.org/uploads/5p/tl/5ptlpy5tkns7enri1baoa2c943fhk7iw.gif" alt="Orbit or Beat">
+                        <div class = "titlebox">
+                            <h6>Orbit or Beat</h6>
+                            <div class = "profile">
+                                <img src="https://playentry.org/uploads/rj/un/rjun1skfkntvs9030u4va2c943b2tpd2.png" alt="nb3at">
+                                <em>_RE_</em>
+                            </div>
+                        </div>
+                        <div class = "interestbox">
+                            <span class="eye">
+                                <img src="https://playentry.org/img/IconViewCnt.svg" alt="눈">
+                                <em>7.3K</em>
+                            </span>
+                            <span class="heart">
+                                <img src="https://playentry.org/img/IconHeartCnt.svg" alt="하트">
+                                <em>259</em>
+                            </span>
+                            <span class="talk">
+                                <img src="https://playentry.org/img/IconCommentCnt.svg" alt="댓글">
+                                <em>207</em>
+                            </span>
+                        </div>
+                        <span class="sticker">
+                            <img src="https://playentry.org/img/IcoDefaultCardStaff.svg" alt="스선">
+                        </span>
+                    </div>    
+                </li>
+                <li>
+                    <div class = "cardbox">
+                        <img src="https://playentry.org/uploads/thumb/604c/604c7c8a4c6b86008925a99f.png" alt="공과 선분의 충돌">
+                        <div class = "titlebox">
+                            <a href="https://playentry.org/project/60b9ab09bac93608f2a4c79d">공과 선분의 충돌</a>
+                            <div class = "profile">
+                                <img src="https://playentry.org/uploads/kg/jo/kgjoejgjkne43lpc19i0a2c943c0j21v.gif" alt="tjstod">
+                                <em>noahmoon</em>
+                            </div>
+                        </div>
+                        <div class = "interestbox">
+                            <span class="eye">
+                                <img src="https://playentry.org/img/IconViewCnt.svg" alt="눈">
+                                <em>6.2K</em>
+                            </span>
+                            <span class="heart">
+                                <img src="https://playentry.org/img/IconHeartCnt.svg" alt="하트">
+                                <em>207</em>
+                            </span>
+                            <span class="talk">
+                                <img src="https://playentry.org/img/IconCommentCnt.svg" alt="댓글">
+                                <em>275</em>
+                            </span>
+                        </div>
+                        <span class="sticker">
+                            <img src="https://playentry.org/img/IcoDefaultCardStaff.svg" alt="스선">
+                        </span>
                     </div>
                 </li>
                 <li>
-                    <img src="https://playentry.org/uploads/q5/9b/q59b228sklalwjeu003kc83c5ceu7ce7.png" alt="작은 그림2">
-                    <div class = "explan">
-                        <h5>이상한 티파티</h5><br>
-                        <h6>찻잔 속에 들어가고 파이를 던지며 노는 파티에</h6><br>
-                        <h6>초대받았어요. 이 파티, 괜찮은 걸까요?</h6>
+                    <div class = "cardbox">
+                        <img src="https://playentry.org/uploads/thumb/5ff7/5ff7e2fd9b470701a115bae4.png" alt="고퀄리티 웹툰-재회(수)">
+                        <div class = "titlebox">
+                            <h6>고퀄리티 웹툰-재회(수)</h6>
+                            <div class = "profile">
+                                <img src="https://playentry.org/uploads/ri/fv/rifvtsp1kkgatneb203b9d00628d3gfy.png" alt="유체리">
+                                <em>시어스</em>
+                            </div>
+                        </div>
+                        <div class = "interestbox">
+                            <span class="eye">
+                                <img src="https://playentry.org/img/IconViewCnt.svg" alt="눈">
+                                <em>6.6K</em>
+                            </span>
+                            <span class="heart">
+                                <img src="https://playentry.org/img/IconHeartCnt.svg" alt="하트">
+                                <em>143</em>
+                            </span>
+                            <span class="talk">
+                                <img src="https://playentry.org/img/IconCommentCnt.svg" alt="댓글">
+                                <em>94</em>
+                            </span>
+                        </div>
+                        <span class="sticker">
+                            <img src="https://playentry.org/img/IcoDefaultCardStaff.svg" alt="스선">
+                        </span>
                     </div>
-                </li>    
+                </li>        
                 <li>
-                    <img src="https://playentry.org/uploads/k4/43/k4436kg8klalwt4h003kc83c5c80bntp.png" alt="작은 그림3">
-                    <div class = "explan">
-                        <h5>여왕의 정원</h5><br>
-                        <h6>무서운 여왕을 피해 정원을 벗어날 수 있도록</h6><br>
-                        <h6>엔트리봇을 도와주세요!</h6>
-                    </div>
-                </li>    
+                    <div class = "cardbox">
+                        <img src="https://playentry.org/uploads/thumb/6078/6078f9692bb94800568ae99a.png" alt="꽃의 이름을 찾아드립니다!">
+                        <div class = "titlebox">
+                            <h6>꽃의 이름을 찾아드립니다!</h6>
+                            <div class = "profile">
+                                <img src="https://playentry.org/uploads/tc/2d/tc2dhy1tkkf2szno12j29d00629yf7qk.png" alt="윈디가디">
+                                <em>exte0427</em>
+                            </div>
+                        </div>
+                        <div class = "interestbox">
+                            <span class="eye">
+                                <img src="https://playentry.org/img/IconViewCnt.svg" alt="눈">
+                                <em>13.2K</em>
+                            </span>
+                            <span class="heart">
+                                <img src="https://playentry.org/img/IconHeartCnt.svg" alt="하트">
+                                <em>124</em>
+                            </span>
+                            <span class="talk">
+                                <img src="https://playentry.org/img/IconCommentCnt.svg" alt="댓글">
+                                <em>262</em>
+                            </span>
+                        </div>
+                        <span class="sticker">
+                            <img src="https://playentry.org/img/IcoDefaultCardStaff.svg" alt="스선">
+                        </span>
+                    </div>    
+                </li>            
             </ul>
         </div>
+    </div>
+
+    <!-- 세 번째 배너 -->
+    <div id = "ban3">
+        <div class="content2">
+            <h1>인기 작품</h1>
+            <ul class = "stapick">
+                <li>
+                    <div class = "cardbox">
+                        <img src="https://playentry.org/uploads/thumb/6040/6040803a9279da06a432d0d6.png" alt="마을 쟁탈전">
+                        <div class = "titlebox">
+                            <h6>마을 쟁탈전</h6>
+                            <div class = "profile">
+                                <img src="https://playentry.org/uploads/4f/ec/4fecf568knn9fah72kdwa2c943bq1w7r.png" alt="블루스타">
+                                <em>푸른망토</em>
+                            </div>
+                        </div>
+                        <div class = "interestbox">
+                            <span class="eye">
+                                <img src="https://playentry.org/img/IconViewCnt.svg" alt="눈">
+                                <em>32.3K</em>
+                            </span>
+                            <span class="heart">
+                                <img src="https://playentry.org/img/IconHeartCnt.svg" alt="하트">
+                                <em>113</em>
+                            </span>
+                            <span class="talk">
+                                <img src="https://playentry.org/img/IconCommentCnt.svg" alt="댓글">
+                                <em>132</em>
+                            </span>
+                        </div>
+                        <span class="sticker">
+                            <img src="https://playentry.org/img/IcoDefaultCardPopular.svg" alt="인작">
+                        </span>
+                    </div>        
+                </li>
+                <li>
+                    <div class = "cardbox">
+                        <img src="https://playentry.org/uploads/thumb/6036/60363b4b4ab84216188bfbf2.png" alt="저작이 훨씬 재밌어요">
+                        <div class = "titlebox">
+                            <h6>저작이 훨씬 재밌어요!</h6>
+                            <div class = "profile">
+                                <img src="https://playentry.org/uploads/xe/lm/xelm4hbjkne463251c8ka2c9438sdn4o.gif" alt="더러운아거">
+                                <em>_HQ_</em>
+                            </div>
+                        </div>
+                        <div class = "interestbox">
+                            <span class="eye">
+                                <img src="https://playentry.org/img/IconViewCnt.svg" alt="눈">
+                                <em>3.1K</em>
+                            </span>
+                            <span class="heart">
+                                <img src="https://playentry.org/img/IconHeartCnt.svg" alt="하트">
+                                <em>127</em>
+                            </span>
+                            <span class="talk">
+                                <img src="https://playentry.org/img/IconCommentCnt.svg" alt="댓글">
+                                <em>136</em>
+                            </span>
+                        </div>
+                        <span class="sticker">
+                            <img src="https://playentry.org/img/IcoDefaultCardPopular.svg" alt="인작">
+                        </span>
+                    </div>   
+                </li>
+                <li>
+                    <div class = "cardbox">
+                        <img src="https://playentry.org/uploads/thumb/6023/6023df07f0511758a3a33d97.png" alt="[땡큐편지][인작] 퓨전할래애">
+                        <div class = "titlebox">
+                            <h6>[땡큐편지][인작] 퓨전할래애</h6>
+                            <div class = "profile">
+                                <img src="https://playentry.org/uploads/36/tg/36tgsr4ikkf5o1v305fm9d00621wfsab.png" alt="hungry643">
+                                <em>치달</em>
+                            </div>
+                        </div>
+                        <div class = "interestbox">
+                            <span class="eye">
+                                <img src="https://playentry.org/img/IconViewCnt.svg" alt="눈">
+                                <em>6.4K</em>
+                            </span>
+                            <span class="heart">
+                                <img src="https://playentry.org/img/IconHeartCnt.svg" alt="하트">
+                                <em>488</em>
+                            </span>
+                            <span class="talk">
+                                <img src="https://playentry.org/img/IconCommentCnt.svg" alt="댓글">
+                                <em>607</em>
+                            </span>
+                        </div>
+                        <span class="sticker">
+                            <img src="https://playentry.org/img/IcoDefaultCardPopular.svg" alt="인작">
+                        </span>
+                    </div>    
+                </li>
+                <li>
+                    <div class = "cardbox">
+                        <img src="https://playentry.org/uploads/e5/b0/e5b01gsakncrkdjn125ydd6333216ewa.gif" alt="프사 대전쟁 3">
+                        <div class = "titlebox">
+                            <h6>프사 대전쟁 3</h6>
+                            <div class = "profile">
+                                <img src="https://playentry.org/uploads/pb/ab/pbabj6vdkncs1zyn18irdd63335es7kl.png" alt="영자">
+                                <em>yeongja</em>
+                            </div>
+                        </div>
+                        <div class = "interestbox">
+                            <span class="eye">
+                                <img src="https://playentry.org/img/IconViewCnt.svg" alt="눈">
+                                <em>1K</em>
+                            </span>
+                            <span class="heart">
+                                <img src="https://playentry.org/img/IconHeartCnt.svg" alt="하트">
+                                <em>89</em>
+                            </span>
+                            <span class="talk">
+                                <img src="https://playentry.org/img/IconCommentCnt.svg" alt="댓글">
+                                <em>121</em>
+                            </span>
+                        </div>
+                        <span class="sticker">
+                            <img src="https://playentry.org/img/IcoDefaultCardPopular.svg" alt="인작">
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>    
+    </div>
+
+    <!-- 네 번째 배너 -->
+    <div id = "ban4">
+        <div class="content3">
+            <h1>새로운 주제에 도전해보세요!</h1>
+            <ul class = "stapick">
+                <li>
+                    <div id = "colorbox">
+                        <h1>[나무, 꽃 환경]</h1>
+                        <h2>봄과 관련된 작품을<br>만들어봄</h2>
+                        <a href="">작품 만들기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class = "cardbox">
+                        <img src="https://playentry.org/uploads/thumb/5e7f/5e7f223ef54ad4002c4a1e51.png" alt="[인작] 감옥탈출! _꽃 이벤트 추가~!">
+                        <div class = "titlebox">
+                            <h6>[인작] 감옥탈출!</h6>
+                            <div class = "profile">
+                                <img src="https://playentry.org/uploads/s5/ci/s5ci3m9ukkes4yu00d749d0062317ff7.png" alt="초파리">
+                                <em>노력의별</em>
+                            </div>
+                        </div>
+                        <div class = "interestbox">
+                            <span class="eye">
+                                <img src="https://playentry.org/img/IconViewCnt.svg" alt="눈">
+                                <em>82</em>
+                            </span>
+                            <span class="heart">
+                                <img src="https://playentry.org/img/IconHeartCnt.svg" alt="하트">
+                                <em>5</em>
+                            </span>
+                            <span class="talk">
+                                <img src="https://playentry.org/img/IconCommentCnt.svg" alt="댓글">
+                                <em>2</em>
+                            </span>
+                        </div>
+                    </div>        
+                </li>
+                <li>
+                    <div class = "cardbox">
+                        <img src="https://playentry.org/uploads/thumb/5c39/5c393befaeb8b79b9f684e47.png" alt="바운스볼: 꽃들이 사라진 마을">
+                        <div class = "titlebox">
+                            <h6>바운스볼: 꽃들이 사라진 마을</h6>
+                            <div class = "profile">
+                                <img src="https://playentry.org/uploads/35/kc/35kcdb35kkeu7etz0mc09d0062823bm6.png" alt="꿀벌">
+                                <em>아만다</em>
+                            </div>
+                        </div>
+                        <div class = "interestbox">
+                            <span class="eye">
+                                <img src="https://playentry.org/img/IconViewCnt.svg" alt="눈">
+                                <em>907</em>
+                            </span>
+                            <span class="heart">
+                                <img src="https://playentry.org/img/IconHeartCnt.svg" alt="하트">
+                                <em>8</em>
+                            </span>
+                            <span class="talk">
+                                <img src="https://playentry.org/img/IconCommentCnt.svg" alt="댓글">
+                                <em>7</em>
+                            </span>
+                        </div>
+                    </div>   
+                </li>
+                <li>
+                    <div class = "cardbox">
+                        <img src="https://playentry.org/uploads/thumb/5e35/5e353129c44e8300a14f6659.png" alt="포켓몬고 이상해씨 이상해풀">
+                        <div class = "titlebox">
+                            <h6>포켓몬고 이상해씨 이상해풀</h6>
+                            <div class = "profile">
+                                <img src="https://playentry.org/uploads/sb/x9/sbx99l68kkezoj9x0vv09d0062cwolu7.png" alt="도치">
+                                <em>하늘솔바람</em>
+                            </div>
+                        </div>
+                        <div class = "interestbox">
+                            <span class="eye">
+                                <img src="https://playentry.org/img/IconViewCnt.svg" alt="눈">
+                                <em>738</em>
+                            </span>
+                            <span class="heart">
+                                <img src="https://playentry.org/img/IconHeartCnt.svg" alt="하트">
+                                <em>16</em>
+                            </span>
+                            <span class="talk">
+                                <img src="https://playentry.org/img/IconCommentCnt.svg" alt="댓글">
+                                <em>50</em>
+                            </span>
+                        </div>
+                    </div>    
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 다섯 번째 배너 -->
+    <div id = "ban5">
+        <div id = "center">
+            <div id = "left">
+                <img src="https://playentry.org/uploads/kh/uv/khuvih35klal6j83003kc83c5c9wbgpn.png" alt="엔트리 학습하기">
+                <h1>엔트리 학습하기</h1>
+                <p1>쉽고 재미있게 배우는 프로그래밍!<br>
+                <br>
+                지금 시작해보세요</p1>   
+            </div>
+            <div id = "right">
+                <ul>   
+                    <li>
+                        <div class = "table">
+                            <img src="https://playentry.org/uploads/sh/16/sh1639xuklalkk5u003kc83c5cghq7ld.png" alt="작은 그림1">
+                            <div class = "explain">
+                                <p1>이상한 숲 속의 엔트리봇</p1><br>
+                                <p2>거대한 풀 숲에 갇힌 엔트리봇을 도와주세요!</p2>
+                                <br>
+                                <em>순차, 반복</em>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "table">
+                            <img src="https://playentry.org/uploads/q5/9b/q59b228sklalwjeu003kc83c5ceu7ce7.png" alt="작은 그림2">
+                            <div class = "explain">
+                                <p1>이상한 티파티</p1><br>
+                                <p2>찻잔 속에 들어가고 파이를 던지며 노는 파티에<br>
+                                초대받았어요. 이 파티, 괜찮은 걸까요?</p2>
+                                <br>
+                                <em>순차, 반복, 조건</em>
+                            </div>
+                        </div>
+                    </li>    
+                    <li>
+                        <div class = "table">
+                            <img src="https://playentry.org/uploads/k4/43/k4436kg8klalwt4h003kc83c5c80bntp.png" alt="작은 그림3">
+                            <div class = "explain">
+                                <p1>여왕의 정원</p1><br>
+                                <p2>무서운 여왕을 피해 정원을 벗어날 수 있도록<br>
+                                엔트리봇을 도와주세요!</p2>
+                                <br>
+                                <em>순차, 반복, 조건</em>
+                            </div>
+                        </div>
+                    </li>    
+                </ul>
+            </div>
+        </div>    
     </div>    
 
-    <div id = ban6>
+    <!-- 여섯 번째 배너 -->
+    <div id = "ban6">
         <h1>유형별 다양한 작품</h1>
-        <ul id = various>
-            <li>
-                <div class = type>
-                    <h1>게임</h1>
-                    <h6>엔트리로 만든 다이나믹한 게임을 만나보세요!</h6>
+        <ul>
+            <li class = "interval">
+                <div class="various">
+                    <strong>게임</strong><br>
+                    <p1>엔트리로 만든 다이나믹한 게임을<br>
+                        만나보세요!</p1><br>
+                    <a href="https://playentry.org/project/list/all?category=game&sort=created&term=all">더보기</a>
                 </div>
-                <ul class = stapick>
-                    <img src="https://playentry.org/uploads/thumb/6083/6083faff5ecbe80295a84fff.png" alt="붕어빵 키우기">
-                    <img src="https://playentry.org/uploads/thumb/6083/6083fa577b3d69028ace8c61.png" alt="40 adventure 3!">
-                    <img src="https://playentry.org/uploads/thumb/6083/6083fcb0a68c202009f9a026.png" alt="계산왕 클리어">
+                <ul class = "work">
+                    <li><img src="https://playentry.org/uploads/thumb/6083/6083faff5ecbe80295a84fff.png" alt="붕어빵 키우기"></li>
+                    <li><img src="https://playentry.org/uploads/thumb/6083/6083fa577b3d69028ace8c61.png" alt="40 adventure 3!"></li>
+                    <li><img src="https://playentry.org/uploads/thumb/6083/6083fcb0a68c202009f9a026.png" alt="계산왕 클리어"></li>
                 </ul>
             </li>    
-            <li>
-                <div class = type>
-                    <h1>생활과 도구</h1>
-                    <h6>일상 속에 필요한 도구들을</h6>
-                    <h6>엔트리 작품에서 만나보세요!</h6>
+            <li class = "interval">
+                <div class="various">
+                    <strong>생활과 도구</strong><br>
+                    <p1>일상 속에 필요한 다양한 도구들을<br>
+                        엔트리 작품에서 만나보세요!</p1><br>    
+                    <a href="https://playentry.org/project/list/all?category=living&sort=created&term=all">더보기</a>
                 </div>
-                <ul class = stapick>    
-                    <img src="https://playentry.org/uploads/thumb/6083/60836098d39beb021dad7b06.png" alt="엔둥이가 보내는 땡큐 편지">
-                    <img src="https://playentry.org/uploads/thumb/6083/6083e659295d7f027df69100.png" alt="ERROR">
-                    <img src="https://playentry.org/uploads/thumb/6084/6084064d557aea033208f95b.png" alt="코딩코딩">
+                <ul class = "work">    
+                    <li><img src="https://playentry.org/uploads/thumb/6083/60836098d39beb021dad7b06.png" alt="엔둥이가 보내는 땡큐 편지"></li>
+                    <li><img src="https://playentry.org/uploads/thumb/6083/6083e659295d7f027df69100.png" alt="ERROR"></li>
+                    <li><img src="https://playentry.org/uploads/thumb/6084/6084064d557aea033208f95b.png" alt="코딩코딩"></li>
                 </ul>
             </li>        
-            <li>
-                <div class = type>
-                    <h1>스토리텔링</h1>
-                    <h6>웃음, 감동, 분노</h6>
-                    <h6>다양한 이야기를 만나보세요!</h6>
-                </div>
-                <ul class = stapick>     
-                    <img src="https://playentry.org/uploads/thumb/6083/6083df8b5ae4360229e2bc3a.png" alt="해골바가지">
-                    <img src="https://playentry.org/uploads/thumb/6083/6083e2b4147f99022ab00ac6.png" alt="_runMG의 14문답">
-                    <img src="https://playentry.org/uploads/thumb/6083/6083ecaf010c800265739dff.png" alt="집안 청소">
+            <li class = "interval">
+                <div class="various">
+                    <strong>스토리텔링</strong><br>
+                    <p1>웃음, 감동, 분노<br>
+                        다양한 이야기를 만나보세요!</p1><br>
+                    <a href="https://playentry.org/project/list/all?category=storytelling&sort=created&term=all">더보기</a>
+                </div>  
+                <ul class = "work">     
+                    <li><img src="https://playentry.org/uploads/thumb/6083/6083df8b5ae4360229e2bc3a.png" alt="해골바가지"></li>
+                    <li><img src="https://playentry.org/uploads/thumb/6083/6083e2b4147f99022ab00ac6.png" alt="_runMG의 14문답"></li>
+                    <li><img src="https://playentry.org/uploads/thumb/6083/6083ecaf010c800265739dff.png" alt="집안 청소"></li>
                 </ul>
             </li>
-            <li>
-                <div class = type>
-                    <h1>예술</h1>
-                    <h6>아름답고 신나는</h6>
-                    <h6>예술의 세계로 GO!</h6>
+            <li class = "interval">
+                <div class="various">
+                    <strong>예술</strong><br>
+                    <p1>아름답고 신나는<br>
+                        다양한 작품의 세계로 GO!</p1><br>
+                    <a href="https://playentry.org/project/list/all?category=arts&sort=created&term=all">더보기</a>
                 </div>
-                <ul class = stapick>   
-                    <img src="https://playentry.org/uploads/thumb/6083/6083e73cb7aaa10332fc928b.png" alt="배너사진 만들어드려욧!">
-                    <img src="https://playentry.org/uploads/thumb/6083/6083fa577b3d69028ace8c61.png" alt="도용금지">
-                    <img src="https://playentry.org/uploads/thumb/6083/6083fc432abca7030244bae8.png" alt="청소 작가님 팬아트">
+                <ul class = "work">   
+                    <li><img src="https://playentry.org/uploads/thumb/6083/6083e73cb7aaa10332fc928b.png" alt="배너사진 만들어드려욧!"></li>
+                    <li><img src="https://playentry.org/uploads/thumb/6083/6083fa577b3d69028ace8c61.png" alt="도용금지"></li>
+                    <li><img src="https://playentry.org/uploads/thumb/6083/6083fc432abca7030244bae8.png" alt="청소 작가님 팬아트"></li>
                 </ul>
             </li>     
-            <li>
-                <div class = type>
-                    <h1>지식 공유</h1>
-                    <h6>나만의 알찬 지식과 경험을</h6>
-                    <h6>친구들과 나눠보세요!</h6>
-                </div>    
-                <ul class = stapick>    
-                    <img src="https://playentry.org/uploads/thumb/6083/6083e801c78d3302c608b50c.png" alt="지구의 모래알과 우주의 항성수">
-                    <img src="https://playentry.org/uploads/thumb/6083/6083e569147f99022ab00b11.png" alt="시작">
-                    <img src="https://playentry.org/uploads/thumb/6083/6083fa577b3d69028ace8c61.png" alt="Meet Cat">
+            <li class = "interval">
+                <div class="various">
+                    <strong>지식공유</strong><br>
+                    <p1>나만의 알찬 지식과 경험을<br>
+                        친구들과 나눠보세요!</p1><br>
+                    <a href="https://playentry.org/project/list/all?category=knowledge&sort=created&term=all">더보기</a>
+                </div>
+                <ul class = "work">    
+                    <li><img src="https://playentry.org/uploads/thumb/6083/6083e801c78d3302c608b50c.png" alt="지구의 모래알과 우주의 항성수"></li>
+                    <li><img src="https://playentry.org/uploads/thumb/6083/6083e569147f99022ab00b11.png" alt="시작"></li>
+                    <li><img src="https://playentry.org/uploads/thumb/6083/6083fa577b3d69028ace8c61.png" alt="Meet Cat"></li>
                 </ul>
             </li>
         </ul>
     </div>
     
-<footer>
+<footer class="foot">
+    <div class="inform">
+        <a href="https://playentry.org/">
+            <img src="https://playentry.org/img/CommonFooterLogo.svg" alt="">
+        </a>
+        <div class="final">
+            <ul>
+                <li>
+                    <a href="https://playentry.org/terms/entry">엔트리 이용약관</a>
+                </li>
+                <li>
+                    <a href="https://playentry.org/terms/privacy">개인정보 처리방침</a>
+                </li>
+                <li>
+                    <a href="https://playentry.org/terms/legal">책임의 한계와 법적 고지</a>
+                </li>
+                <li>
+                    <a href="https://playentry.org/terms/class">학급 서비스 이용약관</a>
+                </li>
+                <li>
+                    <a href="https://playentry.org/terms/operation">엔트리 운영 정책</a>
+                </li>
+            </ul>
+            <p class="platform">
+                엔트리는 네이버 커넥트재단에서 운영하는 비영리 교육 플랫폼입니다.
+                모든 저작물은 교육 목적에 한해 출처를 밝히고 자유롭게 이용할 수 있습니다.
+            </p>
+            <address class="location">
+                <em>경기도 성남시 분당구 불정로 6 NAVER 그린팩토리 16층  |</em>
+                <em>help@playentry.org  |</em>
+                <em>
+                    <a href="https://playentry.org/terms/copyright">오픈소스 라이선스</a>
+                </em>
+            </address>
+            <p class="found">@NAVER Connect Foundation.</p>
+            <form>
+                <select onchange="window.location.href=this.value">
+                  <option value="#">한국어</option>
+                  <option value="https://entry.line.me/">日本語</option>
+                </select>
+            </form>
+            
+            <span id="icon">
+                <a href="https://post.naver.com/my.nhn?memberNo=25082732">
+                    <img src="https://playentry.org/img/IcoFooterNaverPost.svg" alt="네이버 포스트">
+                </a>
+                <a href="https://blog.naver.com/entrylabs">
+                    <img src="https://playentry.org/img/IcoFooterNaver.svg" alt="네이버 블로그">
+                </a>
+                <a href="https://www.facebook.com/playentry">
+                    <img src="https://playentry.org/img/IcoFooterFacebook.svg" alt="페이스북">
+                </a>
+            </span>
+        </div>
+    </div>
 </footer>    
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },    
+  });
+</script>
+
 
 </body>
 

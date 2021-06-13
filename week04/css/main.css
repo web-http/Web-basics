@@ -1,0 +1,36 @@
+/* commom */
+body {
+    background: white;
+}
+
+material-icons {
+    color: #f6f5f0;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+    background: #000;
+    height: 60px;
+    width: 100%
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header>.material-icons {
+    position: absolute;
+}
+
+nav {
+    top: 60px;
+    width: 300px;
+    height: clac(100% - 60px);
+    background: blueviolet;
+    position: absolute;
+    transform: translateX(-100%)
+    
+}
